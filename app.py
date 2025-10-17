@@ -206,7 +206,7 @@ if uploaded_file is not None:
         try:
              # --- Perform OCR, Translation, and Rendering ---
              with st.spinner(f"🔄 Initializing OCR for {', '.join(detected_langs_names)}..."):
-                 reader = Reader(detect_lang_codes)
+                 reader = Reader(['hi'])
              st.info(f"✅ OCR Engine Ready for {', '.join(detected_langs_names)}!")
 
              with st.spinner(f"🔍 Running OCR on the image..."):
@@ -349,4 +349,5 @@ if uploaded_file is not None:
             st.error(traceback.format_exc()) # Show detailed error for debugging
 
 else:
+
     st.info("Please upload an image using the sidebar to start.")
