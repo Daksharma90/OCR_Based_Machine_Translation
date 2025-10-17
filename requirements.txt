@@ -14,4 +14,4 @@ Pillow
 requests
 python-bidi
 arabic-reshaper
-streamlit
+streamlit>=1.30.0
