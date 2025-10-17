@@ -1,0 +1,17 @@
+# requirements.txt
+
+# Core ML and OCR libraries
+torch
+torchvision
+torchaudio
+easyocr
+
+# Translation and Image processing
+deep-translator
+Pillow
+
+# For text rendering (optional but good to have)
+requests
+python-bidi
+arabic-reshaper
+streamlit
